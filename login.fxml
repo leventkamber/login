@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="435.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <TextField fx:id="usernameTextField" layoutX="138.0" layoutY="124.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter the Username" />
+      <PasswordField fx:id="enterPasswordField" layoutX="138.0" layoutY="160.0" prefHeight="26.0" prefWidth="222.0" promptText="Enter the Password" />
+      <Button fx:id="loginButton" layoutX="112.0" layoutY="222.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #0881cc;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="112.0" layoutY="294.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="26.0" prefWidth="262.0" style="-fx-background-color: #0881cc;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginMessageLabel" layoutX="131.0" layoutY="186.0" prefHeight="40.0" prefWidth="275.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox layoutX="17.0" layoutY="8.0" prefHeight="90.0" prefWidth="301.0">
+         <children>
+            <ImageView fitHeight="90.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/BULogo.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="99.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/login-computer-icons-password-png-favpng-Vgq82iRiaQmjtYMYq69ZvrMPx.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="99.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/this-is-a-graphic-reation-of-a-pad-lock-username-and-password-icon-115534595184fsadfncq6.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
